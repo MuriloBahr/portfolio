@@ -12,6 +12,9 @@ body{
     background-color: #7f8665;
 }
 main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     background-color: #17401D;
     padding: 40px;
     margin: auto;
@@ -55,7 +58,7 @@ header{
    
 }
 .menu{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     display: inline;
     text-decoration: none;
     cursor: pointer;
@@ -139,6 +142,30 @@ header{
     animation: JS 1s;
 }
 
+.redes{
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+}
+.redes h1{
+    background-color: #5C7364;
+    color: white;
+    text-align: center;
+    margin: -30px;
+    font-size: 2rem;
+}
+.redes ul{
+    margin-top: 60px;
+    text-indent: 15px;
+    line-height: 1.5em;
+    font-weight: bolder;
+}
+
+
+
+
+
+
 
 
 @keyframes HTML5{
@@ -178,7 +205,7 @@ header{
         width: 0%;
     }
     100%{
-        width: 1%;
+        width: 10%;
     }
 }
 @media (max-width: 630px){
@@ -216,20 +243,23 @@ header{
         width: 120vw;
         height: 150vw;
 
-        background: #17401D;
+        background: #5C7364;
         z-index: 10;
     }
     .menu-section.on nav{
-        display: block;
-        position: relative;
-        top: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background-image: none;
         box-shadow: none;
+        position: relative;
+        top: 20%;
+        left: -20%;
     }
     .menu-section.on .menu-toggle{
         position: absolute;
-        right: 0;
-        top: 50%;
+        left: 16%;
+        top: 0;
     }
     .menu-section.on .menu-toggle .one{
         transform: rotate(45deg) translate(7px, 7px);
@@ -241,13 +271,17 @@ header{
         transform: rotate(-45deg) translate(8px, -9px);
     }
     .menu-section.on nav a{
-        display: block;
+        display: flex;
+        justify-content: center;
         padding: 10px;
         
     }
 }
 @media (max-width: 620px){
     .sobre{
+        font-size: 70%;
+    }
+    .redes{
         font-size: 70%;
     }
 }
