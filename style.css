@@ -241,13 +241,13 @@ i{
     }
 }
 @media (max-width: 737px){
-    .barra-menu{
-        background: none;
-    }
     nav{
         display: none;
     }
-    
+    .barra-menu{
+        max-width: 0;
+        min-width: 0;
+    }
     .one,
     .two,
     .three{
@@ -295,7 +295,7 @@ i{
         box-shadow: none;
         position: relative;
         text-decoration: underline;
-        top: 20%;
+        top: 50%;
         transition: .4s linear;
     }
     .menu-section.on .menu-toggle{
@@ -334,31 +334,11 @@ i{
     footer a{
         font-size: 70%;
     }
+@media (max-width: 400px){
+    .menu-section.on a{
+        font-size: 100%;
+    }
     .menu-section.on nav{
         top: 40%;
     }
 }
-@media (max-width: 430px){
-    .menu-section.on nav{
-        position: relative;
-        top: 40%;
-        right: 20%;
-    }
-
-}
-@media (max-width: 375px){
-    .menu-section.on nav{
-        right: 20%;
-    }
-}
-@media (max-width: 320px){
-    .menu-section.on nav{
-        position: relative;
-        right: 20%;
-    }
-}
-
-
-
-
-
