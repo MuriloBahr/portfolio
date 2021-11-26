@@ -78,6 +78,7 @@ header{
 }
 .toggle-sobre.on .customize-sobre{
     width: 70px;
+    margin-bottom: 20px;
 }
 .customize-sobre, .customize-skills{
     display: flex;
@@ -99,9 +100,10 @@ header{
 .toggle-skills.on{
     display: block;
     background-color: #7488a865;
-    padding: 40px;
+    padding: 55px;
+    margin-top: 20px;
     max-width: 700px;
-    min-width: 320px;
+    min-width: 150px;
     transition: .6s linear;
 }
 .toggle-skills.on > .skills{
