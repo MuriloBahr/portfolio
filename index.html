@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="menu-section">
@@ -34,42 +35,42 @@
         </nav>
     </div>
     <main>
-            
-        <header class="sobre">
-            <h1>Sobre Mim</h1>
-            <p>Olá, meu nome é <strong>Murilo Henrique</strong> tenho 18 anos e sou estudante em <strong>engenharia de software</strong> na universidade <strong>Unicesumar</strong>, foco em ser <strong>DEV mobile e Front End</strong>, fiz este site para demonstrar minhas skills com <strong>HTML, CSS e Js</strong> e para falar um pouco dos meus <strong>projetos</strong> feitos por mim.
-            </p>
-            <p>Me interessei pela área muito novo, com 15 anos estava aprendendo <strong>python</strong> como minha primeira linguagem de programação, e assim descobri o que eu mais amava fazer, <strong>PROGRAMAR</strong></p>
-        </header>
-        <section>
-            <article class="skills">
-                <h1>SKILLS</h1>
-                <li>
-                    <h3>HTML5</h3><span class="barra"><span class="HTML5"></span></span>
-                </li>
-                <li>
-                    <h3>CSS</h3><span class="barra"><span class="CSS"></span></span>
-                </li>
-                <li>
-                    <h3>C</h3><span class="barra"><span class="C"></span></span>
-                </li>
-                <li>
-                    <h3>PYTHON</h3><span class="barra"><span class="PYTHON"></span></span>
-                </li>
-                <li>
-                    <h3>JavaScript</h3><span class="barra"><span class="JS"></span></span>
-                </li>
-            </article>
-            <div class="redes">
-                <h1>Sobre Minhas Redes</h1>
-                <ul>
-                    <li>No topo contem minhas redes sociais, meu linkedin, github e instagram.
-                    </li>
-                    <li>Para saber sobre meus projetos apenas acesse o github é por lá que eu posto meus projetos, treinos e afins!</li>
-                    <li>No instagram é sobre minha vida social, então terá poucas coisas sobre programação ou projetos!</li>
-                    <li>No linkedin é sobre minha carreira e  curriculo!</li>
-                </ul>
+        <div class="toggle-sobre">
+            <div class="customize-sobre">
+                <p class="sobre-section">Sobre Mim</p><div class="toggle-btn-sobre fas fa-chevron-right"></div>
             </div>
+            <header class="sobre">
+                <h1>Sobre Mim</h1>
+                <p>Olá, meu nome é <strong>Murilo Henrique</strong> tenho 18 anos e sou estudante em <strong>engenharia de software</strong> na universidade <strong>Unicesumar</strong>, com o foco em ser <strong>DEV mobile e Front End</strong>, fiz este site para demonstrar minhas habilidades com <strong>HTML5, CSS3 e Js</strong> e para falar um pouco dos meus <strong>projetos</strong> feitos por mim.
+                </p>
+                <p>Me interessei pela área muito novo, com 15 anos estava aprendendo <strong>python</strong> como minha primeira linguagem de programação. E assim descobri o que eu mais amava fazer, <strong>PROGRAMAR</strong></p>
+            </header>
+        </div>
+        <section>
+            <div class="toggle-skills">
+                <div class="customize-skills">
+                    <p class="section-skills">SKILLS</p>
+                    <div class="toggle-btn-skills fas fa-chevron-right"></div>
+                </div>
+                    <article class="skills">
+                        <h1>SKILLS</h1>
+                        <li>
+                            <h3>HTML5</h3><span class="barra"><span class="HTML5"></span></span>
+                        </li>
+                        <li>
+                            <h3>CSS</h3><span class="barra"><span class="CSS"></span></span>
+                        </li>
+                        <li>
+                            <h3>C</h3><span class="barra"><span class="C"></span></span>
+                        </li>
+                        <li>
+                            <h3>PYTHON</h3><span class="barra"><span class="PYTHON"></span></span>
+                        </li>
+                        <li>
+                            <h3>JavaScript</h3><span class="barra"><span class="JS"></span></span>
+                        </li>
+                    </article>
+                </div>
         </section>
         <div class="certificados">
             <h1>Certificados</h1>
@@ -77,5 +78,15 @@
         </div>
     </main>
     <script src="javascript.js"></script>
+    <script>
+        $(".toggle-btn-sobre").click(function () {
+            $(".toggle-sobre").toggleClass("on");
+            $(this).toggleClass("fa-chevron-up");
+        });
+        $(".toggle-btn-skills").click(function () {
+            $(".toggle-skills").toggleClass("on");
+            $(this).toggleClass("fa-chevron-up");
+        });
+    </script>
 </body>
 </html>
