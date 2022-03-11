@@ -67,7 +67,7 @@ header{
     
 }
 .toggle-sobre{
-    transition: .3s linear;
+    transition: .5s linear;
 }
 .toggle-sobre > header{
     display: none;
@@ -104,7 +104,7 @@ header{
     margin-top: 20px;
     max-width: 700px;
     min-width: 150px;
-    transition: .6s linear;
+    transition: .7s linear;
 }
 .toggle-skills.on > .skills{
     display: block;
@@ -114,7 +114,7 @@ header{
     display: none;
 }
 .toggle-skills{
-    transition: .3s linear;
+    transition: .5s linear;
 }
 .toggle-skills .skills{
     display: none;
